@@ -30,6 +30,18 @@ header.masthead .overlay {
     opacity: .3
 }
 
+.header .profile-image {
+    margin-right: 30px;
+}
+.float-left {
+    float: left!important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 header.masthead h1 {
     font-size: 2rem
 }
