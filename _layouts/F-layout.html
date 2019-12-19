@@ -1,32 +1,32 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--FONT -->
-        <script src="https://kit.fontawesome.com/07d3af401e.js" crossorigin="anonymous"></script>
-        <link href="/assets/css/fontawesome-free/css/all.min.css" rel="stylesheet">
-        <link href="/assets/css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!--CSS-->
-        <link href="/assets/css/index-css.css" rel="stylesheet">
-        <link href="/assets/css/blog-post.css" rel="stylesheet">
-        {% if site.highlighter %}
-        <link rel='stylesheet' href='{{ site.url }}/assets/css/syntax.css' type='text/css'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--FONT -->
+    <script src="https://kit.fontawesome.com/07d3af401e.js" crossorigin="anonymous"></script>
+    <link href="/assets/css/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS-->
+    <link href="/assets/css/index-css.css" rel="stylesheet">
+    <link href="/assets/css/blog-post.css" rel="stylesheet">
+    {% if site.highlighter %}
+    <link rel='stylesheet' href='{{ site.url }}/assets/css/syntax.css' type='text/css'>
+    {% endif %}
+    <title> {% if page.title %}
+        {{ page.title }}
+        {% else %}
+        {{ site.name }} &mdash; {{ site.description }}
         {% endif %}
-        <title> {% if page.title %}
-            {{ page.title }}
-            {% else %}
-            {{ site.name }} &mdash; {{ site.description }}
-            {% endif %}
-        </title>
-    </head>
-    
+    </title>
+</head>
+
 
 <body>
 
@@ -49,67 +49,65 @@
 
                 <!-- Categories Widget -->
                 <div class="card my-4">
-                    <h5 class="card-header">Categories</h5>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="#">Web Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">HTML</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Freebies</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="#">JavaScript</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">CSS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tutorials</a>
-                                    </li>
-                                </ul>
+                                <div class="col-lg-4">
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                                        <div class="media-body">
+                                            <h3>Buttonwood, California.</h3>
+                                            <p>Rosemead, CA 91770</p>
+                                        </div>
+                                    </div>
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                                        <div class="media-body">
+                                            <h3>00 (440) 9865 562</h3>
+                                            <p>Mon to Fri 9am to 6pm</p>
+                                        </div>
+                                    </div>
+                                    <div class="media contact-info">
+                                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                                        <div class="media-body">
+                                            <h3>support@colorlib.com</h3>
+                                            <p>Send us your query anytime!</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Side Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Side Widget</h5>
-                    <div class="card-body">
-                        You can put anything you want inside of these side widgets. They are easy to use, and feature
-                        the new Bootstrap 4 card containers!
+                    <!-- Side Widget -->
+                    <div class="card my-4">
+                        <h5 class="card-header">Side Widget</h5>
+                        <div class="card-body">
+                            You can put anything you want inside of these side widgets. They are easy to use, and
+                            feature
+                            the new Bootstrap 4 card containers!
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
+            <!-- /.row -->
         </div>
         <!-- /.row -->
-    </div>
-    <!-- /.row -->
-    {% include footer.html %}
-   
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        {% include footer.html %}
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
