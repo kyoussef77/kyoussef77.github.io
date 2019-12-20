@@ -455,3 +455,8 @@ button:hover
 #f-layout-container{
   padding-bottom: 10rem;
 }
+
+#article_text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
