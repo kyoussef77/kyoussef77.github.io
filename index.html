@@ -3,29 +3,35 @@ layout: Z-layout
 ---
 
 <div class="container">
-  <main class="site-main">
-      <div class="site-banner pt-5 pb-4">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-6 col-md-12 site-title center-block">
-                      <h3 class="title-text">Hey</h3>
-                      <h1 class="tite-text text-uppercase"> I am Kamal</h1>
-                      <h4 class="title-text text-uppercase">Information Technology Student</h4>
-                      <div class="side-buttons">
-                          <div class="d-flex flex-row flex-wrap">
-                              <a type="button" href="{{ site.url }}/contact/" class="btn button primary-button mr-4 text-uppercase">Contact
-                                  Me</a>
-                              <a type="button" href="{{ site.url }}/resume/" class="btn button secondary-button text-uppercase">My
-                                  Resume</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 banner-image">
-                      <img src="/img/IMG_1202.jpg" alt="banner-img" class="img-fluid header-img">
-                  </div>
-              </div>
+    <main class="site-main">
+        <div class="site-banner pt-5 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title center-block">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="tite-text text-uppercase"> I am Kamal</h1>
+                        <h4 class="title-text text-uppercase">Information Technology Student</h4>
+                        <div class="side-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <form action="{{ site.url }}/contact/">
+                                    <button type=" button" class="btn button primary-button mr-4 text-uppercase">
+                                        Contact
+                                        Me</button>
+                                </form>
 
-          </div>
-      </div>
-      
+                                <form action="{{ site.url }}/resume/">
+                                    <button type="button" class="btn button secondary-button text-uppercase">My
+                                        Resume</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="/img/IMG_1202.jpg" alt="banner-img" class="img-fluid header-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 </div>
