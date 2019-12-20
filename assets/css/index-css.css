@@ -448,7 +448,7 @@ button:hover
   font: normal bold 39px/ 40px var(--roboto);
 }
 
-.foote-new p{
+.footer-new p{
   color:white;
 }
 
@@ -458,4 +458,9 @@ button:hover
 
 #article_text {
   padding-right: 90px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #3f6a70de;
 }
